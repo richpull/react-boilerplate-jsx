@@ -22,26 +22,26 @@
   },
   "extends": ["plugin:jest/recommended", "jest-enzyme"],
   "rules": {
-    "linebreak-style": "off", // Неправильно работает в Windows.
-    "arrow-parens": "off", // Несовместимо с prettier
-    "object-curly-newline": "off", // Несовместимо с prettier
-    "no-mixed-operators": "off", // Несовместимо с prettier
+    "linebreak-style": "off", // Doesn't work properly on Windows
+    "arrow-parens": "off", // incompatible with prettier
+    "object-curly-newline": "off", // incompatible with prettier
+    "no-mixed-operators": "off", // incompatible with prettier
     "arrow-body-style": "off", //
-    "function-paren-newline": "off", // Несовместимо с prettier
+    "function-paren-newline": "off", // incompatible with prettier
     "no-plusplus": "off",
-    "space-before-function-paren": 0, // Несовместимо с prettier
-    "max-len": ["error", 100, 2, { "ignoreUrls": true }], // airbnb позволяет некоторые пограничные случаи
-    "no-console": "error", // airbnb использует предупреждение
-    "no-alert": "error", // airbnb использует предупреждение
-    "no-param-reassign": "off", // Это - не наш стиль?
-    "radix": "off", // parseInt, parseFloat и radix выключены.
-    "react/require-default-props": "off", // airbnb использует уведомление об ошибке
-    "react/forbid-prop-types": "off", // airbnb использует уведомление об ошибке
-    "react/jsx-filename-extension": ["error", { "extensions": [".js",".jsx"] }], // airbnb использует .jsx
+    "space-before-function-paren": 0, // incompatible with prettier
+    "max-len": ["error", 100, 2, { "ignoreUrls": true }],
+    "no-console": "error",
+    "no-alert": "error",
+    "no-param-reassign": "off",
+    "radix": "off", // parseInt, parseFloat and radix off
+    "react/require-default-props": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js",".jsx"] }],
     "prefer-destructuring": "off",
-    "react/no-find-dom-node": "off", //
+    "react/no-find-dom-node": "off",
     "react/no-did-mount-set-state": "off",
-    "react/no-unused-prop-types": "off", //  работает нестабильно
+    "react/no-unused-prop-types": "off", //  Doesn't work stabile
     "react/jsx-one-expression-per-line": "off",
     "prettier/prettier": ["error"],
     "no-unused-vars": "off",
