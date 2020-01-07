@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`>>>I N N E R --- Snapshot +++capturing Snapshot of Inner 1`] = `
+<section
+  className="sc-bdVaJa hmHvdz"
+>
+  <h1>
+    Test title
+  </h1>
+  <div>
+    My css-
+    &gt;
+     children.css
+  </div>
+  <div
+    className="children"
+  >
+    <h1>
+      I am Children Component
+    </h1>
+    <p>
+      My css-
+      &gt;
+       styled component
+    </p>
+    <div
+      className="test"
+    >
+      test.css
+    </div>
+  </div>
+</section>
+`;

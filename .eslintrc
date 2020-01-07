@@ -1,0 +1,51 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "plugins": [
+    "babel",
+    "import",
+    "react",
+    "react-hooks",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["plugin:jest/recommended", "jest-enzyme"],
+  "rules": {
+    "linebreak-style": "off", // Неправильно работает в Windows.
+    "arrow-parens": "off", // Несовместимо с prettier
+    "object-curly-newline": "off", // Несовместимо с prettier
+    "no-mixed-operators": "off", // Несовместимо с prettier
+    "arrow-body-style": "off", //
+    "function-paren-newline": "off", // Несовместимо с prettier
+    "no-plusplus": "off",
+    "space-before-function-paren": 0, // Несовместимо с prettier
+    "max-len": ["error", 100, 2, { "ignoreUrls": true }], // airbnb позволяет некоторые пограничные случаи
+    "no-console": "error", // airbnb использует предупреждение
+    "no-alert": "error", // airbnb использует предупреждение
+    "no-param-reassign": "off", // Это - не наш стиль?
+    "radix": "off", // parseInt, parseFloat и radix выключены.
+    "react/require-default-props": "off", // airbnb использует уведомление об ошибке
+    "react/forbid-prop-types": "off", // airbnb использует уведомление об ошибке
+    "react/jsx-filename-extension": ["error", { "extensions": [".js",".jsx"] }], // airbnb использует .jsx
+    "prefer-destructuring": "off",
+    "react/no-find-dom-node": "off", //
+    "react/no-did-mount-set-state": "off",
+    "react/no-unused-prop-types": "off", //  работает нестабильно
+    "react/jsx-one-expression-per-line": "off",
+    "prettier/prettier": ["error"],
+    "no-unused-vars": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}
